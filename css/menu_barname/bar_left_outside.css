@@ -1,0 +1,15 @@
+.menu_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_list_elements {
+  display: flex;
+  columns: row;
+  width: 369px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #4e4a4a1f;
+  font-size: 24px;
+}
