@@ -1,0 +1,161 @@
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.dot_container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto auto 1100px;
+}
+
+.slideshow-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.slide_word {
+  position: absolute;
+  top: 164px;
+  right: 57px;
+  left: auto;
+  font-size: 30px;
+}
+
+.slide1_button {
+  width: 460px;
+  height: 80px;
+  background-color: #08bd27;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.image_slide3 {
+  height: 780px;
+  width: 1645px;
+  object-fit: fill;
+  background-repeat: no-repeat;
+}
+
+.image_slide2 {
+  width: 1645px;
+  height: 780px;
+  object-fit: fill;
+  background-repeat: no-repeat;
+}
+
+.image_slide1 {
+  width: 1645px;
+  height: 780px;
+  object-fit: fill;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1838px) {
+  .image_slide3 {
+    height: 700px;
+    width: 1350px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+  }
+
+  .image_slide2 {
+    height: 700px;
+    width: 1350px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+  }
+
+  .image_slide1 {
+    height: 700px;
+    width: 1350px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .slide_word {
+    position: absolute;
+    top: 164px;
+    right: 200px;
+    left: auto;
+  }
+
+  .slide1_button {
+    width: 200px;
+  }
+
+  .dot_container {
+    margin: 5px auto auto 976px;
+  }
+}
+
+@media screen and (max-width: 1467px) {
+  .slide_word {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1069px) {
+  .image_slide3 {
+    height: 500px;
+    width: 1000px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .image_slide2 {
+    height: 500px;
+    width: 1000px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+  }
+
+  .image_slide1 {
+    height: 500px;
+    width: 1000px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .slide_word {
+    right: 111px;
+  }
+
+  .dot_container {
+    margin: 5px auto auto 500px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .image_slide3 {
+    width: 800px;
+  }
+
+  .image_slide2 {
+    width: 800px;
+  }
+
+  .image_slide1 {
+    width: 800px;
+  }
+  .slide_word {
+    font-size: 10px;
+    right: 140px;
+  }
+
+  .slide1_button {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+}

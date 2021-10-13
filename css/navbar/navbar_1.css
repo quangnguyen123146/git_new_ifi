@@ -22,7 +22,7 @@
 
 .special_offers {
   height: 69px;
-  width: 450px;
+  width: 750px;
   background-color: #84c639;
   color: white;
   font-size: 18px;
@@ -32,7 +32,7 @@
 }
 
 #product {
-  width: 705px;
+  width: 500px;
   font-size: 25px;
 }
 
@@ -56,9 +56,6 @@
   cursor: pointer;
 }
 
-.cart p {
-  margin-left: 25px;
-}
 .search_bar_con {
   width: 100px;
   height: 69px;
@@ -81,6 +78,7 @@
   text-align: center;
   width: 300px;
   cursor: pointer;
+  margin-left: 202px;
 }
 
 .contact_us h1 {
@@ -94,6 +92,8 @@
   visibility: hidden;
   border: 1px solid black;
   border-radius: 20px;
+  background-color: black;
+  color: white;
 }
 
 .user_outer_layer {
@@ -107,7 +107,7 @@
   text-align: center;
   width: 150px;
   height: 40px;
-  padding-top: 35px;
+  padding-top: 20px;
   border-bottom: 1px solid green;
   cursor: pointer;
 }
@@ -166,9 +166,7 @@
   .navbar_first {
     height: 80px;
   }
-  .special_offers {
-    height: 80px;
-  }
+
   .special_offers {
     display: none;
   }

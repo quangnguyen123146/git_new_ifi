@@ -8,165 +8,729 @@
     <link rel="stylesheet" href="/css/navbar/navbar_2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/menu_barname/bar_left_outside.css">
+    <link rel="stylesheet" href="/css/menu_barname/bar_middle.css">
+    <link rel="stylesheet" href="/css/menu_barname/discount.css">
+    <link rel="stylesheet" href="/css/menu_barname/hot_offers.css">
+    <link rel="stylesheet" href="/css/menu_barname/footer_element.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="/css/cart/cart.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "js/cart.js" async></script>
     <title>Home</title>
 </head>
 <body>
-    <div class="special_offers_mobile">
-        <h2>Today's special Offers! </h2>
-    </div>
-    <div class="navbar_first">
-        <div class="special_offers">
-            <h2>Today's special Offers! </h2>
-        </div>
-        <input type="text" id = "product" 
-        class = "product_class"
-         placeholder="Search.." name="search">
-        <div class="search_bar_con">
-            <img src="/images/search.png" id = "search">
-        </div>
-        <div class = "cart" id = "cart_id" >
-            <p style = "color: white">View Your Cart</p>
-            <img src="/images/shopping_cart.png">
-        </div>
-        <div class="user_container">
-            <div class="user_outer_layer" 
-            id = "user_outer_layer_id">
-                <img id = "user_id" style = "width: 69px;
-            height:69px;" src="/images/user.jpg">
+    <div class="root_container">
+        
+            <div class="special_offers_mobile">
+                <h2>Today's special Offers! </h2>
             </div>
-            <div id = "overlay_id" class="overlay">
-                <div id = "overlay_id1" class="overlay1">
-                    <p>login</p>
+            <div class="navbar_first">
+                <div class="special_offers">
+                    <h2>Today's special Offers! </h2>
                 </div>
-                <div id = "overlay_id2"
-                 class="overlay2">
-                    <p>sign_up</p>
+                <input type="text" id = "product" 
+                class = "product_class"
+                 placeholder="Search.." name="search">
+                <div class="search_bar_con">
+                    <img src="/images/search.png" id = "search">
+                </div>
+                <div class = "cart" id = "cart_id" >
+                    <p style = "color: white">View Your Cart</p>
+                    <img src="/images/shopping_cart.png">
+                </div>
+                <div class="user_container">
+                    <div class="user_outer_layer" 
+                    id = "user_outer_layer_id">
+                        <img id = "user_id" style = "width: 69px;
+                    height:69px;" src="/images/user.jpg">
+                    </div>
+                    <div id = "overlay_id" class="overlay">
+                        <div id = "overlay_id1" class="overlay1">
+                            <p>login</p>
+                        </div>
+                        <div id = "overlay_id2"
+                         class="overlay2">
+                            <p>sign_up</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="contact_us">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <div class="contact_us_down">
+                <h1>Contact Us</h1>
+            </div>
+
+            
+    
+            <div class="none_empty_shopping_cart" 
+            id = "none_empty_shopping_cart_id">
+                <h1 class = "x_close">X</h1>
+                <h1 id = "empty_cart"> </h1>
+                <div class="cart_shop_purchase">
+                    <ul class = "item_drop">
+                    
+                    </ul>
+                </div>
+                <div style = "display: flex;
+                flex-direction: row;">
+                    <h1>subtotal: </h1>
+                    <h1 class = "total_price">$0</h1>
+                </div>
+            </div>
+            <div class="navbar_second">
+                <img class = "shopping_logo" src="/images/logo.PNG">
+                <div class="deals">
+                    <p class = "deals_element">Events</p>
+                    <p class = "dash">/</p>
+                    <p class = "deals_element">About Us</p>
+                    <p class = "dash">/</p>
+                    <p class = "deals_element">Best Deals</p>
+                    <p class = "dash">/ </p>
+                    <p class = "deals_element">Services</p>
+                </div>
+                <div class="info_container">
+                    <div class="info_phone">
+                        <img src="/images/phone.jpg" style = "width: 30px;
+                            height: 30px;
+                            margin-top:8px;
+                            margin-left: 100px;
+                            margin-right: 20px;" alt="">
+                        <p id = "contact_info"
+                        style = "margin-top:13px;">
+                            (+0123)234567
+                        </p>
+                    </div>
+                    <div class="info_email">
+                        <img src="/images/email.png" 
+                        style = "width: 30px;
+                        height: 30px; margin-top: 8px;
+                        margin-left: 50px;
+                        margin-right: 20px;">
+                        <p id = "contact_info"
+                        style = "margin-top:13px;">
+                            store@grocerry.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="info_container_down">
+                <div class="info_phone">
+                    <img src="/images/phone.jpg" style = "width: 30px;
+                        height: 30px;
+                        margin-top:8px;
+                        margin-left: 100px;
+                        margin-right: 20px;" alt="">
+                    <p id = "contact_info"
+                    style = "margin-top:13px;">
+                        (+0123)234567
+                    </p>
+                </div>
+                <div class="info_email">
+                    <img src="/images/email.png" 
+                    style = "width: 30px;
+                    height: 30px; margin-top: 8px;
+                    margin-left: 50px;
+                    margin-right: 20px;">
+                    <p id = "contact_info"
+                    style = "margin-top:13px;">
+                        store@grocerry.com
+                    </p>
+                </div>
+            </div>
+        
+            <div class="menu_bar" id = "menu_bar_id">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="hidden_menu_tab" id = "menu_tab_down">
+                <div class="menu_list_elements_down">
+                    <p>Branded Foods
+                    </p>
+                </div>
+                <div class="menu_list_elements_down">
+                    <p>Households</p>
+                </div>
+                <div class="menu_list_elements_down" 
+                id = "veg_meat_id">
+                    <p>Veggies & Fruits ▼</p>
+                </div>
+                <div class="veg_meat_dropdown"
+                    style = "display: none;
+                    font-size : 30px;
+                    text-align: center;"
+                    id = "veg_meat_dropdown_id">
+                    <p>Vegetales</p>
+                    <p>Fruits</p>
+                </div>
+                <div class="menu_list_elements_down">
+                    <p>Kitchen</p>
+                </div>
+                <div class="menu_list_elements_down">
+                    <p>Short Codes</p>
+                </div>
+                <div id="beverage_list_elements">
+                    <div class="menu_list_elements_down"
+                    id = "Beverage_id">
+                        <p>Beverage ▼</p>
+                    </div>
+                    <div class="Beverage_dropdown"
+                    style = "display: none;
+                    font-size : 30px;
+                    text-align: center;
+                    height: 200px;
+                    background-color: white;"
+                    id = "Beverage_dropdown_id">
+                    <p>Soft Drink</p>
+                    <p>Juice</p>
+                </div>
+                </div>
+        
+                <div class="menu_list_elements_down">
+                    <p>Pet Food</p>
+                </div>
+                
+                <div class="menu_list_elements_down"
+                    id = "Frozen_id">
+                        <p>Frozen Foods ▼</p>
+                </div>
+                <div class="Frozen_dropdown"
+                    style = "display: none;
+                    font-size : 30px;
+                    text-align: center;"
+                    id = "Frozen_dropdown_id">
+                    <p>Frozen Snack</p>
+                    <p>Forzen Beverage</p>
+                </div>
+                
+                <div class="menu_list_elements_down">
+                    <p>Bread & Bakery</p>
                 </div>
             </div>
             
+            <div class="menu_section">
+                
+                <div class="menu_section_row">
+                    <div class="menu_list_elements">
+                        <p>Branded Foods
+                        </p>
+                    </div>
+                    <div class="menu_list_elements">
+                        <p>Households</p>
+                    </div>
+                    <div class="menu_list_elements">
+                        <p>Veggies & Fruits ▼</p>
+                    </div>
+                    <div class="menu_list_elements">
+                        <p>Kitchen</p>
+                    </div>
+                    <div class="menu_list_elements">
+                        <p>Short Codes</p>
+                    </div>
+                    <div class="menu_list_elements">
+                        <p>Beverage ▼</p>
+                    </div>
+                    
+                    <div class="menu_list_elements">
+                        <p>Pet Food</p>
+                    </div>
+                    <div class="menu_list_elements">
+                        <p>Frozen Foods </p>
+                    </div>
+                    <div class="menu_list_elements" id = "frozen_element_id">
+                        <p>Frozen Foods ▼</p>
+                    </div>   
+                </div>
+        
+                <!-- <div id = "veggies_fruit_element_id" style =
+                "width: 140px;
+                height: 80px;">
+                    <p>Vegetales</p>
+                    <p>Fruits</p>
+                </div> -->
+        
+        
+                <div class="slideshow-container">
+                    <div class="mySlides" id = "slide1">
+                        <img class = "image_slide1" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/1.jpg">
+                        
+                        <div class="slide_word">
+                            <h1 style = "font-weight: lighter;
+                            font-size: 60px;">MAKE YOUR</h1>
+                            <h1 style = "font-weight: bold;
+                            ">FOOD</h1>
+                            <h1 style = "font-weight: lighter;
+                            ">WITH SPICY</h1>
+                            <button class = "slide1_button"
+                            href = "#">SHOP NOW</button>
+                        </div>
+        
+        
+                    </div>
+        
+                    <div class="mySlides" id = "slide2">
+                        <div>
+                            <img class = "image_slide2"src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/2.jpg">
+                        </div>
+                        
+                        <div class="slide_word">
+                            <h1 style = "font-weight: lighter;
+                            ">MAKE YOUR</h1>
+                            <h1 style = "font-weight: bold;
+                            ">FOOD</h1>
+                            <h1 style = "font-weight: lighter;
+                            ">WITH SPICY</h1>
+                            <button class = "slide1_button"
+                            href = "#">SHOP NOW</button>
+                        </div>
+                        
+                    </div>
+                    <div class="mySlides" id = "slide3">
+                        <img class = "image_slide3"
+                        src="/images/3.jpg">
+        
+        
+                        <div class="slide_word">
+                            <h1 style = "font-weight: lighter;
+                            ">UP TO</h1>
+                            <h1 style = "font-weight: bold;
+                            color: red;">50%</h1>
+                            <h1 style = "font-weight: lighter;
+                            ">Offers</h1>
+                            <button class = "slide1_button"
+                            href = "#">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact_us">
-            <h1>Contact Us</h1>
+        
+        
+        <div class = "dot_container">
+            <span class="dot" id = "dot1"></span> 
+            <span class="dot" id = "dot2"></span> 
+            <span class="dot" id = "dot3"></span> 
         </div>
-    </div>
-    <div class="contact_us_down">
-        <h1>Contact Us</h1>
-    </div>
-    <div class="navbar_second">
-        <img class = "shopping_logo" src="/images/logo.PNG">
-        <div class="deals">
-            <p class = "deals_element">Events</p>
-            <p class = "dash">/</p>
-            <p class = "deals_element">About Us</p>
-            <p class = "dash">/</p>
-            <p class = "deals_element">Best Deals</p>
-            <p class = "dash">/ </p>
-            <p class = "deals_element">Services</p>
+    
+        <div class="discount_container">
+            <div class="discount_image" id = "veggie_grocerries_id">
+                <img id = "veggie_grocerries_id" src="/images/veggie_grocerries.jpg">
+                <div class="discount_element1">
+                    <h1>Discount Offer</h1>
+                </div>
+                <div class="discount_element2">
+                    <h1 style = "margin-top: 40px;">25%</h1>
+                </div>
+            </div>
+            <div class="discount_image" >
+                <img id = "snack_choice_id" 
+                src="/images/snack_cookie.jpg">
+                <div class="snack_element1">
+                    <div class="Introducing">
+                        <h1 style = "font-weight: lighter;">Introducing</h1>
+                    </div>
+                    <div class="best_store">
+                        <h1 style = "font-weight: bolder;
+                        color: greenyellow;">Best Store</h1>
+                        
+                    </div>
+                    <div class="snack_choice_element1">
+                        <h1 style = "font-weight: lighter;">For</h1>
+                    </div>
+                    <div class="snack_choice_element2">
+                        <h1 style = "color: red;
+                        padding-left: 10px;">GROCERIES</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="discount_image">
+                <img class = "fruit_slice" 
+                id = "fruit_slice_id" src="/images/fruits_slices.jpg">
+                <div class="fruit_elements1">
+                    <h1 style = "font-weight: bolder;">SAVE</h1>
+                </div>
+                <div class="fruit_elements2">
+                    <h1 style = "color: red;
+                    font-weight: lighter;">UPTO</h1>
+                </div>
+                <div class="fruit_elements3">
+                    <h1>$10</h1>
+                </div>
+                <h1 style = ></h1>
+            </div>
         </div>
-        <div class="info_container">
-            <div class="info_phone">
-                <img src="/images/phone.jpg" style = "width: 30px;
-                    height: 30px;
-                    margin-top:8px;
-                    margin-left: 100px;
-                    margin-right: 20px;" alt="">
-                <p id = "contact_info"
-                style = "margin-top:13px;">
-                    (+0123)234567
+    
+    
+    
+        <div class="the_big_offers">
+            <h1 class = "offers_title">
+                Hot Offers
+            </h1>
+            <div class = "red_line"></div>
+            <div class="hot_offer_container">
+                <div class="container" id = "item_1">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/tag.png"
+                    class = "hanger_1">
+                    <div class="inside_container">
+                        <div class="image_offer">
+                            <img class = "image_content" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/1.png">
+                        </div>
+                        <div class="price_tag">
+                            <h2 class = "offer_element1">
+                                Fortune Sunflower Oil</h2>
+                            <div class="offer_element_container">
+                                <h1 class = "offer_element2">
+                                    $7.99
+                                </h1>
+                                <h1 class="offer_element3">
+                                    $10.00
+                                </h1>
+                            </div>
+                        </div>
+                        
+                        <button id = "offer_button_1_id
+                        " class = "offer_button" value = "7.99">
+                            ADD TO CART
+                        </button>
+                        <param class = "discount_value" value="2.00">
+                    </div>
+                </div>
+                <div class="container" id = "item_2">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/offer.png"
+                    class = "hanger_2">
+                    <div class="inside_container">
+                        <div class="image_offer">
+                            <img class = "image_content" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/3.png">
+                        </div>
+                        <div class="price_tag">
+                            <h2 class = "offer_element1">
+                                Basmati Rices (5kg)</h2>
+                            <div class="offer_element_container">
+                                <h1 class = "offer_element2">
+                                    $11.99
+                                </h1>
+                                <h1 class="offer_element3">
+                                    $15.00
+                                </h1>
+                            </div>
+                        </div>
+                        
+                        <button id = "offer_button_2_id"
+                         class = "offer_button" value = "11.99">
+                            ADD TO CART
+                        </button>
+                        <param class = "discount_value" value="1.00">
+                    </div>
+                </div>
+                <div class="container" id = "item_3">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/offer.png"
+                    class = "hanger_2">
+                    <div class="inside_container">
+                        <div class="image_offer">
+                            <img class = "image_content" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/2.png">
+                        </div>
+                        <div class="price_tag">
+                            <h2 class = "offer_element1">
+                                Pepsi Soft Drink (2 Ltr)</h2>
+                            <div class="offer_element_container">
+                                <h1 class = "offer_element2">
+                                    $8.00
+                                </h1>
+                                <h1 class="offer_element3">
+                                    $10.00
+                                </h1>
+                            </div>
+                        </div>
+                        <button id = "offer_button_3_id"
+                         class = "offer_button" value = "8.00">
+                            ADD TO CART
+                        </button>
+                        <param class = "discount_value" value="1.00">
+                    </div>
+                </div>
+                <div class="container" id = "item_4">
+                    <div class="inside_container">
+                        <div class="image_offer">
+                            <img class = "image_content" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/4.png">
+                        </div>
+                        <div class="price_tag">
+                            <h2 class = "offer_element1">
+                                Dogs Food (4 Kg)</h2>
+                            <div class="offer_element_container">
+                                <h1 class = "offer_element2">
+                                    $9.00
+                                </h1>
+                                <h1 class="offer_element3">
+                                    $10.00
+                                </h1>
+                            </div>
+                        </div>
+                        <button id = "offer_button_4_id"
+                         class = "offer_button" value = "9.00">
+                            ADD TO CART
+                        </button>
+                        <param class = "discount_value" value="1.00">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="topic_title_container">
+            <h1 class = "topic_title">
+                Hot Topic
+            </h1>
+        </div>
+        <div style = "margin-bottom: 50px;" class = "red_line"></div>
+        <div class="top_office_container">
+            
+            <div class="the_top_offers">
+                <div class="top_menu">
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;
+                        margin-right: 30px;">ALL BRANDS</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">VEGETABLES</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">FRUITS</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">JUICES</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">PET FOODS</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">BREAD & BAKERY</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">CLEANING</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">SPICES</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">DRY FRUITS</h1>
+                    </div>
+                    <div class="top_menu_element">
+                        <h1 style = "font-weight: lighter;">DAIRY PRODUCTS</h1>
+                    </div>
+                </div>
+                <div class="out_side_box">
+                    <div class="top_offers_second">
+                    <div class="top_offers_add">
+                        <div class="top_offers_add_first_row"> 
+                            <div class="add_1">
+                                <img class = "image_number_a" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/8.jpg">
+                            </div>
+                            <div class="add_2">
+                                <div class="special_offers2_one">
+                                    <img class = "image_number_b_1"
+                                    src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/7.jpg">
+                                    
+                                </div>
+                                <div class="special_offers2_two">
+                                    <img class = "image_number_b_2"src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/10.jpg">
+                                    
+                                </div>
+                            </div>
+                            <div class="add_3">
+                                <div class="special_offers3_one">
+                                    <img class = "image_number_c_1" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/9.jpg">
+                                </div>
+                                <div class="special_offers3_two">
+                                    <img class = "image_number_c_2" src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/11.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="top_offers_add_second_row">
+                        <h1><span id = "discount_adds">GET 25% Off</span> On First Order And Also Get Gift Voucher</h1>
+                    </div>
+                </div>
+            </div>
+        
+    
+        <div class="sign_up_container">
+            <div class="sign_up_container_fix">
+                <div class="sign_up_title">
+                    <h1 class = "sign_up_title_element">Sign Up For Our Newsletter</h1>
+                </div>
+                <div class="input_text">
+                    <input class = "input_text_element_1"
+                    type="text" placeholder="Email">
+                    <button class = "input_text_element_2">SUBSCRIBE NOW</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer_elements">
+                <h1 class = "footer_element_biggest">
+                    INFORMATION
+                </h1>
+                <p style = "margin-top: 65px;"
+                class = "footer_element_kids"> > Events</p>
+                <p class = "footer_element_kids"> > About Us</p>
+                <p class = "footer_element_kids"> > Best Deals</p>
+                <p class = "footer_element_kids"> > Services</p>
+                <p class = "footer_element_kids"> > Short Codes</p>
+            </div>
+            <div class="footer_elements">
+                <h1 class = "footer_element_biggest">
+                    POLICY INFORMATION
+                </h1>
+                <p style = "margin-top: 65px;"
+                class = "footer_element_kids">
+                    > FAQ
+                </p>
+                <p class = "footer_element_kids">
+                    > Privacy Policy
+                </p>
+                <p class = "footer_element_kids">
+                    > Terms Of Use
                 </p>
             </div>
-            <div class="info_email">
-                <img src="/images/email.png" 
-                style = "width: 30px;
-                height: 30px; margin-top: 8px;
-                margin-left: 50px;
-                margin-right: 20px;">
-                <p id = "contact_info"
-                style = "margin-top:13px;">
-                    store@grocerry.com
+            <div class="footer_elements">
+                <h1 class = "footer_element_biggest">
+                    WHAT IN STORES
+                </h1>
+                <p style = "margin-top: 65px;"
+                class = "footer_element_kids">
+                    > Pet Food
+                </p>
+                <p class = "footer_element_kids">
+                    > Frozen Snacks
+                </p>
+                <p class = "footer_element_kids">
+                    > Kitchen
+                </p>
+                <p class = "footer_element_kids">
+                    > Branded Foods
+                </p>
+                <p class = "footer_element_kids">
+                    > Households
                 </p>
             </div>
+            <div class="footer_elements">
+                <h1 class = "footer_element_biggest">
+                    TWITTER POSTS
+                </h1>
+                <div class="twitter_box">
+                    <div class="twitter_box_header">
+                        <img class = "twitter_box_image" src="/images/twitter_bird.png">
+                        <p class = "twitter_box_text">
+                            01 day ago
+                        </p>
+                    </div>
+                    <div class="twitter_box_container_element">
+                        <p>Non numquam </p>
+                        <p  class = "link_text">http://sd.ds/13jklf# </p>
+                        <p> eius modi</p>
+                    </div>
+                    
+                    <div class="twitter_box_container_element">
+                        <p class = "link_text">
+                            http://sd.ds/1389kjklf# 
+                        </p>
+                        <p>quo nulla</p>
+                    </div>
+    
+                </div>
+                <div class="twitter_box">
+                    <div class="twitter_box_header">
+                        <img class = "twitter_box_image" src="/images/twitter_bird.png">
+                        <p class = "twitter_box_text">
+                            02 day ago
+                        </p>
+                    </div>
+    
+                    <div class="twitter_box_container_element">
+                        <p>Con numquam </p>
+                        <p> </p>
+                        <p  class = "link_text">http://fd.uf/56hfg#  </p>
+                        <p> eius modi</p>
+                    </div>
+                    
+                    <p>tempora incidunt ut labore et</p>
+                    <div class="twitter_box_container_element">
+                        <p class = "link_text">
+                            http://fd.uf/56hfg#  
+                        </p>
+                        <p>quo nulla</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="info_container_down">
-        <div class="info_phone">
-            <img src="/images/phone.jpg" style = "width: 30px;
-                height: 30px;
-                margin-top:8px;
-                margin-left: 100px;
-                margin-right: 20px;" alt="">
-            <p id = "contact_info"
-            style = "margin-top:13px;">
-                (+0123)234567
-            </p>
-        </div>
-        <div class="info_email">
-            <img src="/images/email.png" 
-            style = "width: 30px;
-            height: 30px; margin-top: 8px;
-            margin-left: 50px;
-            margin-right: 20px;">
-            <p id = "contact_info"
-            style = "margin-top:13px;">
-                store@grocerry.com
-            </p>
-        </div>
-    </div>
-    <div class="menu_section">
-        <div class="list_menu">
-            <div class="menu_list_elements">
-                <p class = "tag_name">Branded Foods
-                </p>
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Households</p>
-                
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Veggies & Fruits</p>
-                
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Kitchen</p>
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Short Codes</p>
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Beverage</p>
-                
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Pet Food</p>
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Frozen Foods </p>
-            </div>
-            <div class="menu_list_elements">
-                <p class = "tag_name">Frozen Foods </p> 
-            </div>           
-        </div>
+    
+       <div class="payment_connect">
+           <div class="payment">
+               <h1 style = "font-weight: bold;
+               color: green"> 100% Secure Payments</h1>
+               <div class="payment_card_options">
+                   <img class = "payment_card_images" 
+                   src="https://demo.w3layouts.com/demos_new/template_demo/20-07-2017/grocery_store-demo_Free/725976873/web/images/card.png">
+               </div>
+           </div>
+           <div class="connect">
+               <h1 style = "color: white;
+               font-weight: bold;">Connect With Us</h1>
+               <div class="image_container">
+                   
+                    <div class="icon_container">
+                        <h1 class = "icon_element">
+                            <i class = "fa fa-facebook" id = "facebook_id" aria-hidden="true"></i>
+                        </h1>
+                    </div>
+                    
+                    <div class="icon_container">
+                        <h1 class = "icon_element"> 
+                            <i class = "fa fa-twitter" aria-hidden="true"></i>
+                        </h1>
+                    </div>
+                   
+                    <div class="icon_container">
+                        <h1 class = "icon_element">
+                            <i class = "fa fa-google-plus" aria-hidden="true"></i>
+                        </h1>
+                    </div>
+                    
+                    <div class="icon_container">
+                        <h1 class = "icon_element">
+                            <i class = "fa fa-instagram" aria-hidden="true"></i>
+                        </h1>
+                    </div>
+                   
+                   <div class="icon_container">
+                        <h1 class = "icon_element">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                        </h1>
+                   </div>
+                   
+                   
 
-        <div class="slider">
-            <div class="slide">
-                <img src="/images/food_gg.jpg">
-            </div>
-            <div class="slide">
-                <img src="/images/pizza.jpg">
-            </div>
-            <div class="slide">
-                <img src="/images/drinks.jfif">
-            </div>
-        </div>
-    </div>
-    <div class="dot">
-    </div>
-    <div class="dot">
-    </div>
-    <div class="dot">
+               </div>
+               
+    
+           </div>
+       </div>
+    
+       <div class="final_footer">
+           <h3 class = "final_footer_text">
+            © 2016 Grocery Store. All rights reserved | Design by W3layouts
+           </h3>
+       </div>
     </div>
     
     <script src="js/home.js"></script>
+
 </body>
 </html>
