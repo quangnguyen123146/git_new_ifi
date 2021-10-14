@@ -1,0 +1,440 @@
+.hot_offer_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.hanger_1 {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 80px;
+  height: 150px;
+}
+
+.hanger_2 {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 70px;
+  height: 100px;
+}
+
+.inside_container {
+  border: 1px solid black;
+  height: 570px;
+  width: 370px;
+  margin: 15px 15px 15px 15px;
+}
+
+.price_tag {
+  margin-left: 70px;
+}
+
+.image_content {
+  width: 300px;
+  height: 330px;
+  margin-left: 40px;
+}
+
+.offer_element_container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.offer_element1 {
+  font-weight: lighter;
+  margin-right: 50px;
+}
+
+.offer_element3 {
+  margin-left: 30px;
+  font-weight: lighter;
+}
+
+.offer_button {
+  font-size: 30px;
+  background-color: red;
+  color: white;
+  height: 50px;
+  margin-left: -1px;
+  cursor: pointer;
+}
+
+.the_big_offers {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(216, 219, 219);
+  padding: 20px 20px 20px 20px;
+}
+
+.offers_title {
+  font-size: 50px;
+}
+
+.red_line {
+  width: 300px;
+  height: 7px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: white;
+}
+
+/*top_offers*/
+
+.the_top_offers {
+  display: flex;
+  flex-direction: row;
+  margin-left: 110px;
+  background-color: gainsboro;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.top_menu_element {
+  width: 300px;
+  height: 70px;
+  margin-bottom: 1px;
+  margin-right: 20px;
+  padding-top: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.top_offers_add_first_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.top_offers_add {
+  display: flex;
+  flex-direction: row;
+}
+
+.image_number_a {
+  height: 700px;
+  width: 550px;
+}
+
+.image_number_b_1 {
+  position: relative;
+  width: 435px;
+  height: 366px;
+  margin-bottom: 30px;
+}
+
+.image_number_b_2 {
+  position: relative;
+  width: 435px;
+  height: 299px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.image_number_c_1 {
+  width: 435px;
+  height: 299px;
+  margin-bottom: 30px;
+}
+
+.image_number_c_2 {
+  width: 435px;
+  height: 362px;
+}
+
+.b1_button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background-color: greenyellow;
+  color: white;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+.b2_button {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  color: red;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+.top_offers_second {
+  display: flex;
+  flex-direction: column;
+}
+
+.top_offers_add_second_row {
+  margin: 50px auto;
+}
+/*top_offers*/
+
+/*sign up */
+
+.sign_up_container {
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+}
+
+.sign_up_container_fix {
+  display: flex;
+  flex-direction: row;
+  margin: 90px auto;
+}
+
+.sign_up_title_element {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.input_text_element_1 {
+  width: 566px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: red;
+}
+
+.input_text_element_2 {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.input_text_element_2:hover {
+  background-color: black;
+  color: red;
+}
+
+/*sign up */
+
+@media screen and (max-width: 1897px) {
+  .the_top_offers {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px auto;
+    background-color: white;
+  }
+
+  .top_offers_add_first_row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top_offers_add {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top_menu_element {
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .top_offers_add {
+    margin: 20px auto;
+  }
+
+  .special_offers2_two {
+    margin-left: -30px;
+  }
+
+  .top_menu {
+    border: 15px solid gainsboro;
+  }
+
+  .add_1 {
+    border: 15px solid gainsboro;
+    padding: 30px 30px 30px 30px;
+  }
+
+  .add_2 {
+    margin-top: 20px;
+    border: 15px solid gainsboro;
+    padding: 30px 30px 30px 30px;
+  }
+
+  .add_3 {
+    margin-top: 20px;
+    border: 15px solid gainsboro;
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+@media screen and (max-width: 1643px) {
+  .hot_offer_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  /*top_offers*/
+  /*top_offers*/
+  .container {
+    width: 560px;
+    height: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .inside_container {
+    border: 1px solid black;
+    height: 570px;
+    width: 530px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .image_content {
+    margin-left: 70px;
+  }
+
+  .price_tag {
+    margin-left: 140px;
+  }
+
+  .offer_button {
+    margin-left: 60px;
+    width: 400px;
+  }
+
+  /*sign up */
+  .sign_up_container_fix {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign_up_title {
+    margin: -20px auto;
+  }
+
+  .input_text {
+    margin: -20px auto;
+  }
+  /*sign up */
+
+  .topic_title_container {
+    margin-top: 550px;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .container {
+    width: 400px;
+    height: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .inside_container {
+    border: 1px solid black;
+    height: 570px;
+    width: 369px;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .image_content {
+    margin-left: 16px;
+  }
+
+  .price_tag {
+    margin-left: 76px;
+  }
+
+  .offer_button {
+    margin-left: 36px;
+    width: 303px;
+  }
+
+  .hot_offer_container {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .hot_offer_container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: 30px;
+  }
+  /*top_offers*/
+
+  .the_top_offers {
+    margin-left: 10px;
+  }
+
+  .top_menu_element {
+    margin-left: 32px;
+    width: 551px;
+  }
+  /*top_offers*/
+
+  /*sign up */
+  .sign_up_container_fix {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign_up_title_element {
+    font-size: 40px;
+  }
+
+  .sign_up_title {
+    margin: -20px auto;
+  }
+
+  .input_text {
+    margin: -20px auto;
+    font-size: 20px;
+  }
+
+  .input_text_element_1 {
+    width: 327px;
+    margin-left: -18px;
+  }
+
+  .input_text_element_2 {
+    width: 194px;
+    height: 59px;
+    margin-left: 10px;
+  }
+  /*sign up */
+
+  .topic_title_container {
+    margin-top: 1850px;
+  }
+}

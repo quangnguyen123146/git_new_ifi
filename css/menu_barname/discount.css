@@ -1,0 +1,247 @@
+.discount_container {
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto auto 290px;
+}
+
+.discount_image {
+  position: relative;
+  text-align: center;
+}
+
+#veggie_grocerries_id {
+  width: 370px;
+  height: 400px;
+  object-fit: cover;
+  margin-left: 46px;
+  margin-right: 90px;
+}
+
+#snack_choice_id {
+  width: 450px;
+  height: 400px;
+  margin-left: 90px;
+  object-fit: cover;
+}
+
+#fruit_slice_id {
+  width: 450px;
+  height: 400px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.discount_element1 {
+  position: absolute;
+  top: 8px;
+  right: -22px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.discount_element2 {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  border-radius: 60px;
+  margin-top: 72px;
+}
+
+.Introducing {
+  position: absolute;
+  top: 8px;
+  left: 119px;
+}
+
+.best_store {
+  position: absolute;
+  top: 66px;
+  right: 135px;
+}
+
+.snack_choice_element1 {
+  position: absolute;
+  top: 120px;
+  left: 119px;
+}
+
+.snack_choice_element2 {
+  position: absolute;
+  top: 120px;
+  left: 170px;
+}
+
+.fruit_elements1 {
+  position: absolute;
+  top: 158px;
+  left: 122px;
+}
+
+.fruit_elements2 {
+  position: absolute;
+  top: 210px;
+  left: 122px;
+}
+
+.fruit_elements3 {
+  position: absolute;
+  top: 260px;
+  left: 132px;
+}
+
+@media screen and (max-width: 1691px) {
+  .discount_container {
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto auto 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .discount_container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto auto 0;
+  }
+
+  #veggie_grocerries_id {
+    width: 750px;
+    height: 700px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 90px;
+    margin-bottom: 90px;
+  }
+
+  #snack_choice_id {
+    width: 750px;
+    height: 500px;
+    margin-left: 179px;
+    margin-bottom: 90px;
+    object-fit: cover;
+  }
+
+  #fruit_slice_id {
+    width: 750px;
+    height: 500px;
+    margin-left: 177px;
+    margin-right: 90px;
+    object-fit: cover;
+  }
+
+  .Introducing {
+    position: absolute;
+    top: 8px;
+    left: 407px;
+  }
+
+  .best_store {
+    position: absolute;
+    top: 66px;
+    right: 185px;
+  }
+
+  .snack_choice_element1 {
+    position: absolute;
+    top: 120px;
+    left: 407px;
+  }
+
+  .snack_choice_element2 {
+    position: absolute;
+    top: 120px;
+    left: 457px;
+  }
+
+  .fruit_elements1 {
+    position: absolute;
+    top: 271px;
+    left: 352px;
+  }
+
+  .fruit_elements2 {
+    position: absolute;
+    top: 311px;
+    left: 352px;
+  }
+
+  .fruit_elements3 {
+    position: absolute;
+    top: 351px;
+    left: 369px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #veggie_grocerries_id {
+    width: 750px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 44px;
+    margin-bottom: 90px;
+  }
+
+  #snack_choice_id {
+    width: 400px;
+    height: 400px;
+    margin-left: -50px;
+    margin-bottom: 90px;
+  }
+
+  .Introducing {
+    position: absolute;
+    top: 8px;
+    left: 185px;
+  }
+
+  .best_store {
+    position: absolute;
+    top: 66px;
+    right: 220px;
+  }
+
+  .snack_choice_element1 {
+    position: absolute;
+    top: 120px;
+    left: 185px;
+  }
+
+  .snack_choice_element2 {
+    position: absolute;
+    top: 120px;
+    left: 240px;
+  }
+
+  .fruit_slice {
+    margin-left: 41px;
+  }
+
+  #fruit_slice_id {
+    width: 400px;
+    height: 400px;
+    margin-left: 41px;
+    margin-right: 90px;
+  }
+
+  .fruit_elements1 {
+    position: absolute;
+    top: 158px;
+    left: 195px;
+  }
+
+  .fruit_elements2 {
+    position: absolute;
+    top: 210px;
+    left: 195px;
+  }
+
+  .fruit_elements3 {
+    position: absolute;
+    top: 260px;
+    left: 195px;
+  }
+}

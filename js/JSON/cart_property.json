@@ -1,0 +1,36 @@
+
+{
+    "cart": [
+        {
+            "id" : "item_1",
+            "name" : "Fortune Sunflower Oil",
+            "price": "$7.99",
+            "item_count": "1",
+            "discount": "2.00"
+        },
+
+        {
+            "id" : "item_2",
+            "name" : "Basmati Rices (5kg)",
+            "price": "$11.99",
+            "item_count" : "1",
+            "discount" : "1.00"
+        },
+
+        {
+            "id" : "item_3",
+            "name" : "Pepsi Soft Drink (2 Ltr)",
+            "price": "$8.00",
+            "item_count": "1",
+            "discount": "1.00"
+        }, 
+
+        {
+            "id" : "item_4",
+            "name" : "Dogs Food (4 Kg)",
+            "price": "$9.00",
+            "item_count": "1",
+            "discount": "1.00"
+        }
+    ]
+}
