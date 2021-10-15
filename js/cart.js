@@ -4,20 +4,6 @@ for (let i = 0 ; i < button.length; i++) {
     button[i].addEventListener('click', addToCartClicked)
 }
 
-const changed_up_down = document.getElementsByClassName('item_count');
-for (let i = 0; i < changed_up_down.length; i++) {
-    changed_up_down[i].addEventListener('change', item_count_change)
-
-}
-
-function item_count_change(event) {
-    var input = event.target
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1
-    }
-    updateCart();
-}
-
 if (Object.keys(localStorage).length === 0) {
     $('.empty_cart').innerText = 'empty cart';
 }else {
@@ -42,57 +28,48 @@ function addToCartClicked(event) {
     if (!localStorage.getItem('cart')) localStorage.setItem('cart', JSON.stringify({}));
     const cart = JSON.parse(localStorage.getItem('cart'));
     if (cart[id]) {
-        let countz = Number(cart[id].count) + count
-        updateCount(cart[id], countz);
-        return;
+        cart[id].count += count;
+        item_count_change(cart[id]);
     }else {
         cart[id] = newItem;
+        add1ItemToCart(newItem);
     } 
     localStorage.setItem('cart', JSON.stringify(cart))
-    updateCart(id);
-    add1ItemToCart(newItem);
+    updateCart();
 }
 
-function updateCount(item, count) {
-    let name = item.name;
-    let price = item.price;
-    let discount = item.discount;
-    let id = item.id;
-    const cart = JSON.parse(localStorage.getItem('cart'));
-    if(id in cart) {
-        delete cart[id]
-        let item_new = {
-            id : id,
-            name : name,
-            price: price,
-            count: count,
-            discount: discount,
+
+function item_count_change(event) {
+    var id = event.id;
+    var row = document.getElementsByClassName('shopping');
+    var i = 0;
+    for (i; i < row.length; i++) {
+        if (id in row[i]) {
+            var item_count = document.getElementsByClassName('item_count')[i]; //undefine
+            var item_count_value = Number(item_count.value); //undefine
+            item_count.value = item_count_value + 1; //undefine
+            break;
         }
-        if (!localStorage.getItem('cart')) localStorage.setItem('cart', JSON.stringify({}));
-        localStorage.setItem('cart', JSON.stringify(item_new))
     }
+    updateCart();
 }
-
-
-
 
 
 function add1ItemToCart(item) {
     var cart = $(".cart_shop_purchase")
-    const html = `<div class = "shopping_cart" id = "${item.id}">
-        <div class = "item_element" >
-        <span class = "item_name">
-        ${item.name}  
-        </span>
-        <span class = "discount">
-            Discount: ${item.discount}
-        </span>
-    </div>
-    <input class = "item_count" type="number" value = "1" min = "1" max = "100">
-    <div class="x-container" onclick = "removeCartItem(event)">X</div>
-    <span class = "price_tag">${item.price}</span>
-    </div>`
-    console.log(cart)
+    const html = `<div class = "shopping" id = "${item.id}">
+    <div class = "item_element">
+    <span class = "item_name">
+      ${item.name}  
+    </span>
+</div>
+<h1 class = "add">+</h1>
+<input class = "item_count" type="number" min = "1"
+max = "100" value = 1>
+<h1 class = "minus">-</h1> 
+<div class="x-container" onclick = "removeCartItem(event)">X</div>
+<span class = "price_tag">${item.price}</span>
+</div>`;
     const $html = $(html);
     $html.find('item_name').text(item.name);
     $html.find('item_count').val(item.count);
@@ -102,9 +79,24 @@ function add1ItemToCart(item) {
     updateCart();
 }
 
+var plus_minus = document.getElementsByClassName('item_count');
+for (var i = 0; i < plus_minus.length; i++) {
+    plus_minus[i].addEventListener('click', plus_and_minus);
+}
+
+function plus_and_minus (event){
+    var cart = JSON.parse(localStorage.getItem('cart'));
+    const $item = $(event.target).closest('.shopping');
+    const id = $item.attr('id');
+    if (isNaN(event.value) || event.value <= 0) {
+        event.value = Number(event.value) + 1;
+    }
+    cart[id].count = Number(event.value);
+    updateCart();
+}
 
 function removeCartItem(event) {
-    const $item = $(event.target).closest('.shopping_cart');
+    const $item = $(event.target).closest('.shopping');
     const id = $item.attr('id');
     const cart = JSON.parse(localStorage.getItem('cart'));
     delete cart[id]
@@ -116,7 +108,7 @@ function removeCartItem(event) {
 
 function updateCart() {
     var cartItemContainer = document.getElementsByClassName('none_empty_shopping_cart')[0];
-    var cartRows = cartItemContainer.getElementsByClassName('shopping_cart');
+    var cartRows = cartItemContainer.getElementsByClassName('shopping');
     var total = 0;
 
     for (var i = 0; i < cartRows.length; i++) {
@@ -143,18 +135,20 @@ function initCartFromStorage( ) {
         const $cart = $('.cart_shop_purchase')
         for (let key in cart) {
             const item = cart[key]
-            const html = `<div class = "item_element" id = "${item.id}">
+            const html = `<div class = "shopping" id = "${item.id}">
+            <div class = "item_element">
             <span class = "item_name">
               ${item.name}  
             </span>
-            <span class = "discount">
-                Discount: ${item.discount}
-            </span>
         </div>
+        <h1 class = "add">+</h1>
         <input class = "item_count" type="number" min = "1"
-        max = "100">
+        max = "100" value = 1>
+        <h1 class = "minus">-</h1> 
         <div class="x-container" onclick = "removeCartItem(event)">X</div>
-        <span class = "price_tag">${item.price}</span>`;
+        <span class = "price_tag">${item.price}</span>
+        <span class = "discount">${item.discount}</span>
+        </div>`;
         const $html = $(html);
         $html.find('item_name').text(item.name);
         $html.find('item_count').val(item.count);
@@ -163,5 +157,6 @@ function initCartFromStorage( ) {
         $cart.append($html);
         total += item.price * item.count
         }
+        updateCart()
     }
 }
