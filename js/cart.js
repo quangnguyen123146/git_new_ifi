@@ -29,7 +29,11 @@ function addToCartClicked(event) {
     const cart = JSON.parse(localStorage.getItem('cart'));
     if (cart[id]) {
         cart[id].count += count;
-        item_count_change(cart[id]);
+        for (let x in wholepage) {
+            if (cart[id] == wholepage[x].id) {
+                wholepage[x].getElementsByClassName('item_count')[0].value = cart[id].count;
+            }
+        }
     }else {
         cart[id] = newItem;
         add1ItemToCart(newItem);
@@ -39,24 +43,13 @@ function addToCartClicked(event) {
 }
 
 
-function item_count_change(event) {
-    var id = event.id;
-    var row = document.getElementsByClassName('shopping');
-    var i = 0;
-    for (i; i < row.length; i++) {
-        if (id in row[i]) {
-            var item_count = document.getElementsByClassName('item_count')[i]; //undefine
-            var item_count_value = Number(item_count.value); //undefine
-            item_count.value = item_count_value + 1; //undefine
-            break;
-        }
-    }
-    updateCart();
-}
+
 
 
 function add1ItemToCart(item) {
+    const cart_item = JSON.parse(localStorage.getItem('cart'));
     var cart = $(".cart_shop_purchase")
+    id = item.id;
     const html = `<div class = "shopping" id = "${item.id}">
     <div class = "item_element">
     <span class = "item_name">
@@ -88,11 +81,14 @@ function plus_and_minus (event){
     var cart = JSON.parse(localStorage.getItem('cart'));
     const $item = $(event.target).closest('.shopping');
     const id = $item.attr('id');
-    if (isNaN(event.value) || event.value <= 0) {
-        event.value = Number(event.value) + 1;
+    if (isNaN(event.target.value) || event.target.value <= 0) {
+        return;
     }
-    cart[id].count = Number(event.value);
+    console.log(event.target.value)
+    event.value = Number(event.value) + 1;
     updateCart();
+    cart[id].count += parseInt(event.value)
+    localStorage.setItem('cart', JSON.stringify(cart))
 }
 
 function removeCartItem(event) {
